@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo de Múltiplos de 3</title>
+    <style>
+        .bingo-card {
+            display: grid;
+            grid-template-columns: repeat(5, 60px);
+            grid-gap: 5px;
+            margin-bottom: 20px;
+        }
+        .bingo-cell {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            font-size: 20px;
+        }
+        .marked {
+            background-color: yellow;
+        }
+        .line {
+            border-color: red;
+        }
+        button {
+            margin: 5px;
+            background-color: aqua;
+            border-radius: 15px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo de Múltiplos de 3</h1>
+    <div id="bingo-card" class="bingo-card">
+
+    </div>
+
+    <button onclick="markX()"> Marcar X </button>
+    
+    <button onclick="markThreeX()"> Marcar 3 X </button>
+
+    <button onclick="drawVerticalLine()"> Línea Vertical </button>
+
+    <script src="js/bingo.js"></script>
+</body>
+</html>
